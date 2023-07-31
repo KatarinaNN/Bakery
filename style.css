@@ -1,0 +1,130 @@
+body{
+    background-color:antiquewhite;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-family: 'Kalam', cursive;
+    font-size: 50px;
+    margin: 0;
+}
+h2{
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+    margin: 0;
+}
+h3{
+    font-family: 'Kalam', cursive;
+    margin: 0;
+}
+.container{
+    display: flex;
+}
+.item{
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Kalam', cursive;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+}
+h4{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: 0;
+}
+p{
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: 0;
+}
+.selected{
+    flex: 3;
+}
+.selected h4{
+    font-size: 30px;
+    transition: all 1s  ease-in;
+}
+.selected p{
+    font-size: 23px;
+    transition: all 1s ease-in;
+}
+label{
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+}
+.text-input{
+    margin: auto;
+    font-family: 'Kalam', cursive;
+    background-color: antiquewhite;
+    border: none;
+    height: 25px;
+}
+.btn{
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    width: 100%;
+    background-color: #9FC9F3;
+    border: none;
+}
+a{
+    color: #000000;
+}
+.one{
+    background-image: url(1donuts.jpg);
+    color: aliceblue;
+}
+.two{
+    background-image: url(puffpastries.jpg);
+}
+.three{
+    background-image: url(3brioche.jpg);
+    color: aliceblue;
+}
+.four{
+    background-image: url(4baguettes.jpg);
+}
+.five{
+    background-image: url(5barley.jpg);
+}
+.six{
+    background-image: url(6cacke.jpg);
+}
+.seven{
+    background-image: url(croissants.jpg);
+}
+.eight{
+    background-image: url(bagels.jpg);
+}
+.nine{
+    background-image: url(whole.jpg);
+}
+@media all and (max-width:900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 170vh;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .selected h4{
+        font-size: 25px;
+    }
+}

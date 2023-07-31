@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>We are finally open!</h1>
+        <h2>"Mama O" bakery</h2>
+        <h3>Kamreerintie 3, Espoo <a href="tel:+358442394307">phone: +3584423354477</a></h3>
+    </div>
+    <div class="container">
+        <div class="item one">
+            <h4>Donuts</h4>
+            <p>0.80€</p>
+        </div>
+        <div class="item two">
+            <h4 >Puff pastries</h4>
+            <p>1.5€</p>
+        </div>
+        <div class="item three">
+            <h4>Brioche</h4>
+            <p>3.0€</p>
+        </div>
+        <div class="item four">
+            <h4>Wheat baguettes</h4>
+            <p>2.0€</p>
+        </div>
+        <div class="item five">
+            <h4>Barley bread</h4>
+            <p>3.0€</p>
+        </div>
+        <div class="item six">
+            <h4>Rasberry cacke</h4>
+            <p>3.8€</p>
+        </div>
+        <div class="item seven">
+            <h4>Croissants</h4>
+            <p>0.85€</p>
+        </div>
+        <div class="item eight">
+            <h4 class="f">Bagels</h4>
+            <p>0.75€</p>
+        </div>
+        <div class="item nine">
+            <h4>Whole-grain bread</h4>
+            <p>3.20€</p>
+        </div>
+    </div>
+    <br>
+    <div class="header">
+        <h2>Place an order!</h2>
+    </div>
+    <form
+    action="https://formspree.io/f/xkneobge"
+    method="POST">  
+
+    <input type="hidden" name="_language" value="en">
+<div class="header">
+    <label>
+    Your phone:
+    <input type="phone number" class="text-input" name="phone" placeholder="your phone..." required="">
+    </label>
+</div>
+<div class="header">
+    <label>
+    Your address:
+    <input type="text" class="text-input" name="address" placeholder="your address..." required="">
+    </label>
+</div>
+<div class="header">
+    <label>
+        Your order:
+    <textarea class="text-input" name="message" placeholder="type your order...." required=""></textarea>
+    </label>
+</div>
+<div class="header">
+    <button class="btn" type="submit">Send</button>
+</div>
+</form>
+    <script src="index.js"></script>
+</body>
+</html>
